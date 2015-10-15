@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodeUniversity.Model
 {
-    public class Class1
+    public class TagGroup
     {
+        public string Tag { get; set; }
+        public ICollection<int> Ids { get; set; }
     }
 }
