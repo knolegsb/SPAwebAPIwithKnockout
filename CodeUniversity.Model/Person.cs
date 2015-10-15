@@ -20,7 +20,7 @@ namespace CodeUniversity.Model
         public string Bio { get; set; }
 
 
-        public virtual ICollection<Session> SpeakerSession { get; set; }
+        public virtual ICollection<Session> SpeakerSessions { get; set; }
         public virtual ICollection<Attendance> AttendanceList { get; set; }
     }
 }

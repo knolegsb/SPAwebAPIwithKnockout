@@ -38,6 +38,10 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NLipsum.Core, Version=0.9.0.0, Culture=neutral, PublicKeyToken=593e1df460e1bda0, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLipsum.0.1.3\lib\net40\NLipsum.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -50,7 +54,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeUniversityDbContext.cs" />
+    <Compile Include="Configuration\AttendanceConfiguration.cs" />
+    <Compile Include="Configuration\SessionConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\CodeUniversityDatabaseInitializer.cs" />
+    <Compile Include="SampleData\PeopleNames.cs" />
+    <Compile Include="SampleData\RandomSelector.cs" />
+    <Compile Include="SampleData\SampleTextGenerator.cs" />
+    <Compile Include="SampleData\SampleTrack.cs" />
+    <Compile Include="SampleData\TagsGenerator.cs" />
+    <Compile Include="SampleData\TheChosen.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeUniversity.Model\CodeUniversity.Model.csproj">
@@ -61,6 +74,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
